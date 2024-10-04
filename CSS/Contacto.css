@@ -1,0 +1,335 @@
+
+
+/* Contenedor principal */
+
+.main-container {
+  display: flex;
+   padding: 40px;
+  max-width: 1000px;
+  background: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+  border-radius: 1rem;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: rgb(0,0,0) 5px 10px 50px ,rgb(0,0,0) -5px 0px 250px;
+  box-sizing: border-box;
+  z-index: 0;
+  display: flex;
+  position: relative;
+}
+
+.main-container:hover{
+  transform: scale(1.02);
+  background: rgba(0, 0, 0, 0.4); /* Fondo semi-transparente */
+}
+
+/* Contenedor de contenido */
+.content-container {
+  display: flex;
+  flex-direction: row; /* Cambio a columna en pantallas más pequeñas */
+  gap: 5%;
+}
+
+
+.Space{
+  padding: 10rem 10rem;
+}
+
+.info {
+  color: white;
+}
+
+.form {
+  color: #ccc;
+}
+
+.field {
+  margin-bottom: 15px;
+}
+
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.m1 {
+  border: none;
+  outline: none;
+  border-radius: 15px;
+  padding: 1em;
+  color: whitesmoke;
+  background-color:  #761616c0;
+  border: 0.2rem solid transparent;
+  box-shadow: inset 2px 5px 10px rgba(0,0,0,0.3);
+  transition: 300ms ease-in-out;
+  
+}
+
+.m1:focus {
+  background: #23272f;
+  outline: none;
+  color: white;
+  border: 1px solid rgba(255, 217, 0, 0.327);
+  transform: scale(1.05);
+  animation: rotateShadow 2s infinite linear;
+
+}
+
+input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color:  #761616c0;
+  color: white;
+  border: 1px solid rgba(255, 217, 0, 0.305);
+  border-radius: 2rem;
+  cursor: pointer;
+  font-size: 16px;
+  transition: box-shadow 0.3s ease, background-color 0.3s ease, color 0.3s ease,transform 0.2s ease;
+}
+
+input[type="submit"]:hover {
+  transform: scale(1.05);
+  box-shadow: 2px 2px 12px rgba(110, 14, 14, 0.923),-2px -2px 12px rgba(112, 13, 13, 0.814) ;
+  border: 0.1rem solid gold;
+  background-color: gold;
+  color: black;
+}
+
+
+input[type="submit"]:active{
+  transform: scale(1.01);
+  border: 1px solid #1e0924;
+  color: white;
+  box-shadow: 6px 6px 12px #2a0d31, -6px -6px 12px #2a0d31;
+  background-color: #2a0d31;
+}
+
+
+.M{
+   padding: 10px;
+   font-size: 1.2rem;
+   font-weight: bold,600;
+    background: linear-gradient(90deg, rgba(46, 84, 127, 0.680)0%, gold 50%, rgba(46, 84, 127, 0.680) 100%);
+    background-size: 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: lightUpText 6s infinite linear;
+    letter-spacing: 2px;
+}
+
+
+@media (max-width: 1180px) {
+
+  html{
+    font-size: 69.5%;
+  }
+  
+  .main-container {
+      padding: 30px; /* Aumenta el padding para más espacio */
+  }
+
+
+  .info, .form {
+      margin-bottom: 20px; /* Añade un margen inferior para separar más los elementos */
+      padding: 20px;
+  }
+
+  input[type="text"], input[type="submit"] {
+      margin-bottom: 15px; /* Da más espacio entre los campos del formulario */
+  }
+}
+
+@media (max-width: 1180px) {
+  html{
+    font-size: 69.5%;
+  }
+  
+  .form {
+      width: 100%; /* Asegura que el formulario use el ancho completo */
+      padding: 1rem;
+  }
+
+  .m1 {
+      width: 100%; /* Asegura que los inputs ocupen el ancho completo */
+      max-width: 100%; /* Previene que se encojan */
+  }
+
+  input[type="submit"] {
+      width: 100%; /* El botón de envío debe ser ancho */
+  }
+}
+
+@media (max-width: 767px) {
+  html{
+    font-size: 48.5%;
+  }
+
+  /* Ajustes generales */
+  .Space {
+    display: flex;
+    align-items: center;
+    align-content: center;
+      padding: 4.9rem 5rem; /* Agrega un margen lateral de 1.5rem */
+  }
+
+  .main-container {
+      display: flex;
+      flex-direction: column;
+      padding: 1.5rem; /* Margen de 1.5rem alrededor del contenido */
+      width: 100%;
+      box-sizing: border-box;
+      max-width: none;
+      border-radius: 1.3rem;
+  }
+
+  /* Ajustes para el contenido */
+  .content-container {
+    display: flex;
+    align-content: center;
+      flex-direction: column;
+      gap: 0.5rem;
+      width: 100%;
+      
+  }
+
+  .info {
+      text-align: center;
+      font-size: 0.9rem;
+      padding: 0.5rem;
+  }
+
+  /* Formulario */
+  .form {
+      width: 100%;
+      padding: 0.5rem 1.5rem; /* Margen lateral de 1.5rem */
+  }
+
+  .field {
+      margin-bottom: 1.2rem; /* Espaciado entre campos */
+  }
+
+  /* Campos de entrada */
+  .m1 {
+      width: 90%; /* Reduce el ancho de los inputs al 90% */
+      padding: 0.5rem;
+      font-size: 1rem;
+      margin: 0 auto; /* Centra los inputs */
+      border-radius: 0.6rem;
+  }
+
+  /* Botón de envío */
+  input[type="submit"] {
+      display: flex;
+      align-items: center;
+      width: 40%; /* Reduce el ancho del botón al 70% */
+      padding: 0.6rem;
+      font-size: 1rem;
+      border-radius: 0.5rem;
+      margin: 0 auto; /* Centra el botón */
+      display: block;
+  }
+
+  /* Texto animado */
+  .M {
+      font-size: 1rem;
+      letter-spacing: 0.5px;
+  }
+
+  /* Aseguramos que el contenedor del formulario esté bien centrado */
+  .main-container {
+      align-items: center;
+      justify-content: center;
+  }
+
+  /* Ajuste de espaciado */
+  .m1:focus {
+      transform: scale(1.02); /* Efecto suave en campos de texto */
+  }
+}
+
+@media (max-width: 468px) {
+
+  
+  /* Ajustes generales */
+  .Space {
+    display: flex;
+    align-items: center;
+    align-content: center;
+      padding: 4.9rem 6rem; /* Agrega un margen lateral de 1.5rem */
+  }
+
+  .main-container {
+      display: flex;
+      flex-direction: column;
+      padding: 1.5rem; /* Margen de 1.5rem alrededor del contenido */
+      width: 100%;
+      box-sizing: border-box;
+      max-width: none;
+      border-radius: 1.3rem;
+  }
+
+  /* Ajustes para el contenido */
+  .content-container {
+    display: flex;
+    align-content: center;
+      flex-direction: column;
+      gap: 0.5rem;
+      width: 100%;
+      
+  }
+
+  .info {
+      text-align: center;
+      font-size: 0.9rem;
+      padding: 0.5rem;
+  }
+
+  /* Formulario */
+  .form {
+      width: 100%;
+      padding: 0.5rem 1.5rem; /* Margen lateral de 1.5rem */
+  }
+
+  .field {
+      margin-bottom: 1.2rem; /* Espaciado entre campos */
+  }
+
+  /* Campos de entrada */
+  .m1 {
+      width: 90%; /* Reduce el ancho de los inputs al 90% */
+      padding: 0.5rem;
+      font-size: 1rem;
+      margin: 0 auto; /* Centra los inputs */
+      border-radius: 0.6rem;
+  }
+
+  /* Botón de envío */
+  input[type="submit"] {
+      display: flex;
+      align-items: center;
+      width: 50%; /* Reduce el ancho del botón al 70% */
+      padding: 0.6rem;
+      font-size: 1rem;
+      border-radius: 0.5rem;
+      margin: 0 auto; /* Centra el botón */
+      display: block;
+  }
+
+  /* Texto animado */
+  .M {
+      font-size: 1rem;
+      letter-spacing: 0.5px;
+  }
+
+  /* Aseguramos que el contenedor del formulario esté bien centrado */
+  .main-container {
+      align-items: center;
+      justify-content: center;
+  }
+
+  /* Ajuste de espaciado */
+  .m1:focus {
+      transform: scale(1.02); /* Efecto suave en campos de texto */
+  }
+}

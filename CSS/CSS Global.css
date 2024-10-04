@@ -1,0 +1,1022 @@
+/**Cuerpo y estilo**/
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-repeat: repeat-y;
+    overflow-x: hidden;
+}
+
+html {
+    font-size: 89.5%;
+}
+
+
+
+.header-text{
+	font-size: 1.4em;
+	margin-top: 1.2rem;
+	line-height: 1.6;
+	position: relative;
+	max-width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	background: #0c0000cb;
+	box-shadow: 2px 2px 15px  #761616c0;
+	padding: 1.2rem;
+	transition: box-shadow 0.3s ease, background-color 0.3s, transform 0.3s ease;
+	border-radius: 0.7rem;
+	
+}
+
+@keyframes lightUpText {
+    0% {
+        background-position: 200%;
+    }
+    100% {
+        background-position: -100%;
+    }
+}
+
+.Legend,
+.Decoration, 
+.text1{
+    font-size: 1.3rem;
+    font-weight: bold;
+    background: linear-gradient(90deg, rgba(46, 84, 127, 0.680)0%, gold 50%, rgba(46, 84, 127, 0.680) 100%);
+    background-size: 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: lightUpText 6s infinite linear;
+    letter-spacing: 2px;
+}
+
+.title-footer,
+.copyright,
+.heading-1{
+	font-size: 1.3rem;
+    font-weight: bold;
+    background: linear-gradient(90deg, rgba(46, 84, 127, 0.680)0%, gold 50%, rgba(46, 84, 127, 0.680) 100%);
+    background-size: 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: lightUpText 6s infinite linear;
+    letter-spacing: 2px;
+}
+
+.product-name,
+.text-1,
+.text-2{
+    font-size: 1.5rem;
+    font-weight: bold;
+    background: linear-gradient(90deg, rgba(46, 84, 127, 0.680)0%, gold 50%, rgba(46, 84, 127, 0.680) 100%);
+    background-size: 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: lightUpText 6s infinite linear;
+    letter-spacing: 2px;
+}
+
+.A{
+    font-size: 1.2rem;
+    font-weight: bold;
+    background: linear-gradient(90deg, rgba(46, 84, 127, 0.680)0%, gold 50%, rgba(46, 84, 127, 0.680) 100%);
+    background-size: 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: lightUpText 6s infinite linear;
+    letter-spacing: 2px;
+}
+
+.O{
+	display: inline;
+    background: linear-gradient(90deg, rgba(46, 84, 127, 0.680)0%, gold 50%, rgba(46, 84, 127, 0.680) 100%);
+    background-size: 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: lightUpText 6s infinite linear;
+    letter-spacing: 2px;
+}
+
+.N{
+	display: inline;
+	font-size: 1.3rem;
+	font-weight: bold;
+    background: linear-gradient(90deg, rgba(46, 84, 127, 0.680)0%, gold 50%, rgba(46, 84, 127, 0.680) 100%);
+    background-size: 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: lightUpText 6s infinite linear;
+	transition: 300ms ;
+
+}
+
+.N:hover{
+	font-size: 1.3rem;
+	font-weight: bold;
+    background: linear-gradient(90deg, gold 0%, rgba(184, 3, 3, 0.68) 50%, gold 100%);
+    background-size: 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: lightUpText 6s infinite linear;
+	transform: scale(1.05);
+}
+
+
+.header-text:hover{
+	transform: scale(1.05); /* Aumenta el tamaño de la imagen significativamente */
+}
+
+
+
+
+.img-background {
+    background-image: radial-gradient(at 50% 50%, #8f0707, #0c0000); /* Gradiente rojo a negro */
+    box-shadow: 0 0 70px rgba(0, 0, 0, 0.7); /* Sombra negra intensa */
+    transition: box-shadow 0.5s ease-in-out, background-position 0.5s ease-in-out;
+    animation: pulseShadow 5s infinite alternate ease-in-out;
+}
+
+/* Efecto de sombra pulsante */
+@keyframes pulseShadow {
+    0% {
+        box-shadow: 0 0 50px rgba(0, 0, 0, 0.7);
+    }
+    100% {
+        box-shadow: 0 0 80px rgba(0, 0, 0, 0.9); /* Intensificación de la sombra */
+    }
+}
+
+.img-background:hover {
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.9); /* Sombra más intensa al hacer hover */
+    animation: none;
+}
+
+/* Efecto de animación suave al mover el mouse */
+@keyframes moveGradient {
+    0% {
+        background-position: 50% 50%;
+    }
+    100% {
+        background-position: 75% 25%;
+    }
+}
+
+
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5rem;
+	transition: box-shadow 0.3s ease;
+    background-color: #000000ab;
+    color: white;
+    border-bottom: 0.1rem solid gold;
+	height: auto;
+	position: relative;
+	
+}
+
+
+.header:hover{
+	box-shadow: 2px 2px 30px rgba(255, 217, 0, 0.503),2px 2px 30px rgba(255, 217, 0, 0.503);
+}
+
+.header-text {
+    flex: 1;
+    text-align: center;
+}
+
+.header-text h1 {
+    margin: 0;
+    font-size: 2.4rem;
+    text-transform: uppercase;
+}
+
+.header-text p {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+.logo {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+	 
+}
+
+.logo img {
+	box-shadow: 2px 2px 15px  #761616d1;;
+    max-width: 13rem;
+	margin-left: 3rem;
+	height: 50% ;
+	transition: transform 0.3s ease;
+	border-radius: 3rem;
+}
+
+.logo img:hover{
+	transform: scale(1.05); /* Aumenta el tamaño de la imagen significativamente */
+}
+
+
+/* BOTÓN DESPLEGABLE PARA EL MENÚ */ 
+.btn1 {
+	width: 12rem;
+	height: 4rem;
+	border-radius: 0.7rem;
+	border: none;
+	transition: box-shadow 0.3 ease, all 0.5s ease-in-out;
+	font-size: 1.2rem;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-weight: 600;
+	display: flex;
+	align-items: center;
+	border: 0.1rem solid white;
+	background: #000000;
+	box-shadow: 6px 6px 12px #000000, -6px -6px 12px #000000;
+	transition: box-shadow 0.3s ease, background-color 0.3s, transform 0.2s;
+	position: relative;
+	padding: 0 1rem;
+}
+
+/* Cambios al pasar el cursor */
+.btn1:hover {
+	background: gold;
+	transform: scale(1.09);
+	box-shadow: 6px 6px 12px gold, -6px -6px 12px gold;
+}
+
+/* Al hacer clic */
+.btn1:active {
+
+	box-shadow: 2px 2px 12px rgba(112, 13, 13, 0.814),-2px -2px 12px rgba(112, 13, 13, 0.814) ;
+	background-color:  #8d0f0f;
+	transform: scale(1.07);
+	border: 0.1rem solid gold;
+	color: gold;
+
+}
+
+
+
+/* Icono dentro del botón */
+.btn1 .icon1 {
+	position: absolute;
+	height: 4rem;
+	width: 5rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: all 0.5s;
+}
+
+ 
+/* Texto del botón */
+.btn1 .text1 {
+	transform: translateX(55px);
+}
+
+/* Efecto al hacer hover en el icono */
+.btn1:hover .icon1 {
+	width: 11.5rem;
+}
+
+/* Efecto al hacer hover en el texto */
+.btn1:hover .text1 {
+	transition: all 0.5s;
+	opacity: 0;
+}
+
+/* Enfocar el botón */
+.btn1:focus {
+	outline: none;
+}
+
+/* Al hacer clic el icono se reduce un poco */
+.btn1:active .icon1 {
+	transform: scale(0.85);
+}
+
+
+
+/* Estilos del menú de navegación */
+nav {
+	position: fixed;
+	top: 0;
+	left: -300px;
+	/*oculta el menu*/
+	width: 270px;
+	height: 100%;
+	padding: 15px;
+	transform: translateX(0);
+	transition: left 0.3s ease;
+	/* Transición suave al mostrar y ocultar */
+	z-index: 1000;
+	background: rgba(0, 0, 0, 0.8);
+	/* Fondo semi-transparente */
+	padding-top: 75px;
+	/* Espacio superior para los enlaces de navegación */
+}
+
+/* Mostrar el menú lateral cuando está activo */
+nav.active {
+	left: 0;
+	
+}
+
+/* Estilos de la lista de navegación */
+nav .menu {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	text-align: justify;
+	/* Justifica el contenido del menú */
+}
+
+
+nav .menu li {
+	margin-bottom: 0.3rem;
+	/* da espacio al menu mientas mas se le sube mas separado queda*/
+}
+
+nav .menu a {
+	color: #fff;
+	text-decoration: none;
+	font-size: 1.2em;
+	display: block;
+	/* le ayuda a mantener lo q se le ordena a margin-bottom*/
+	padding: 15px 5px;
+	transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+nav .menu a:hover {
+	color: gold;
+	/* Cambio de color al pasar el mouse */
+}
+
+/* Botón de menú para dispositivos móviles */
+.toggle-menu {
+	position: fixed;
+	top: 10px;
+	left: 20px;
+	font-size: 2.5em;
+	color: #ffffff;
+	cursor: pointer;
+	z-index: 1001;
+}
+
+
+.menu a i {
+	color: #faf7f7;
+	/* Color general para todos los íconos */
+	margin-right: 1.2rem;
+	/* Espacio entre el ícono y el texto */
+}
+
+
+
+
+/* *************************** */
+/*            Footer           */
+/* *************************** */
+.footer {
+    background-color: #000000bb;
+    border: 0.1rem solid gold;
+    transition: box-shadow 0.3s ease;
+    display: grid;
+    grid-template-columns: 4fr;
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+        "menu"
+        "copyright";
+    padding: 2rem;
+    text-align: center;
+}
+
+.footer:hover {
+	box-shadow: 2px 2px 30px rgba(255, 217, 0, 0.503),2px 2px 30px rgba(255, 217, 0, 0.503);
+}
+
+.container-footer {
+    display: contents;
+}
+
+.menu-footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+        "contact information account";
+    gap: 3rem;
+    grid-area: menu;
+    justify-items: center;
+}
+
+.contact-info {
+    grid-area: contact;
+}
+
+.information {
+    grid-area: information;
+}
+
+.my-account {
+    grid-area: account;
+}
+
+.copyright {
+    display: flex;
+    justify-content: center;
+    grid-area: copyright;
+}
+
+.title-footer {
+    font-weight: 600;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+}
+
+
+
+/* From Uiverse.io by Yaya12085 */ 
+.playstore-button {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	border: 0.1rem solid gold;
+	border-radius: 9999px;
+	background-color:  #761616c0;
+	padding: 0.625rem 1.5rem;
+	text-align: center;
+	color: gold;
+	outline: 0;
+	transition: all  .2s ease, box-shadow 0.3 ease, transform 0.3s ease;
+	box-shadow: 2px 2px 12px rgba(112, 13, 13, 0.814),-2px -2px 12px rgba(112, 13, 13, 0.814) ;
+	text-decoration: none;
+	transition: 300ms;
+  }
+  
+  .playstore-button:hover {
+	box-shadow: 2px 2px 12px rgba(112, 13, 13, 0.814),-2px -2px 12px rgba(112, 13, 13, 0.814) ;
+	background-color:  #761616c0;
+	transform: scale(1.07);
+	color: gold;
+  }
+  
+  
+  .playstore-button:active {
+	box-shadow: 2px 2px 12px rgba(221, 2, 2, 0.613),-2px -2px 12px rgba(221, 2, 2, 0.613) ;
+	border: 0.1rem solid gold;
+	transform: scale(0.9);
+	color: gold;
+  }
+
+  
+  .icon {
+	height: 1.5rem;
+	width: 1.5rem;
+  }
+  
+  .texts {
+	margin-left: 1rem;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	line-height: 1;
+  }
+  
+  .text-1 {
+	margin-bottom: 0.25rem;
+	font-size: 0.75rem;
+	line-height: 1rem;
+  }
+  
+  .text-2 {
+	font-weight: 600;
+  }
+
+
+.contact-info ul,
+.information ul,
+.my-account ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+    padding: 0rem 5rem;
+}
+
+.contact-info ul li,
+.information ul li,
+.my-account ul li {
+    list-style: none;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.information ul li a,
+.my-account ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 300;
+}
+
+.information ul li a:hover,
+.my-account ul li a:hover {
+    color: var(--background-color);
+}
+
+.card {
+    max-width: fit-content;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    gap: 1rem;
+    backdrop-filter: blur(15px);
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.192),
+        inset 0 0 5px rgba(255, 255, 255, 0.274), 0 5px 5px rgba(0, 0, 0, 0.164);
+    transition: 0.5s;
+}
+
+.card:hover {
+    background: rgba(173, 173, 173, 0.05);
+}
+
+.card ul {
+    padding: 1rem;
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.card ul li {
+    cursor: pointer;
+}
+
+.svg {
+    transition: all 0.3s ease;
+    padding: 0.5rem;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    color: rgb(255, 174, 0);
+    fill: currentColor;
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.3),
+                inset 0 0 5px rgba(255, 255, 255, 0.5), 
+                0 5px 5px rgba(0, 0, 0, 0.164);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Mantén el tamaño de los SVGs consistente al hacer hover */
+.iso-pro:hover .svg {
+    z-index: 1; /* Asegura que el SVG esté encima de la primera sombra */
+    transform: translate(5px, -5px);
+    padding: 1.3rem;           /* Mantén el padding igual */
+    height: 40px;              /* Mantén el tamaño igual */
+    width: 40px;               /* Mantén el tamaño igual */
+}
+
+.iso-pro:active .svg {
+    background: rgba(0, 0, 0, 0.755);
+}
+
+.text {
+    opacity: 0;
+    border-radius: 5px;
+    padding: 5px;
+    transition: all 0.3s;
+    color: rgb(255, 174, 0);
+    background-color: rgba(255, 255, 255, 0.3);
+    position: absolute;
+    z-index: 9999;
+    box-shadow: -5px 0 1px rgba(153, 153, 153, 0.2),
+      -10px 0 1px rgba(153, 153, 153, 0.2),
+      inset 0 0 20px rgba(255, 255, 255, 0.3),
+      inset 0 0 5px rgba(255, 255, 255, 0.5), 0 5px 5px rgba(0, 0, 0, 0.082);
+}
+
+.iso-pro:hover .text {
+    opacity: 1;
+    transform: translate(25px, -2px) skew(-10deg);
+}
+
+.iso-pro span {
+    opacity: 0;
+    position: absolute;
+    color: #1877f2;
+    border-color: #1877f2;
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.3),
+      inset 0 0 5px rgba(255, 255, 255, 0.5), 0 5px 5px rgba(0, 0, 0, 0.164);
+    border-radius: 50%;
+    transition: all 0.3s;
+    height: 60px;
+    width: 60px;
+}
+
+.content p {
+    font-size: 1.8rem;
+    color: #fff;
+    font-weight: 300;
+}
+
+.copyright p {
+    font-weight: 400;
+    font-size: 1.6rem;
+}
+
+
+/***************************/
+
+
+/* ********************************** */
+/*       MEDIA QUERIES -- 768px       */
+/* ********************************** */
+
+/* Responsivo para pantallas pequeñas */
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column-reverse;
+        text-align: center;
+		
+    }
+
+    .header-text {
+        margin-bottom: 1rem;
+    }
+
+    .logo {
+		top:25% ;
+        justify-content: center;
+        margin-bottom: 2rem;
+    }
+
+    .logo img {
+        max-width: 55%;
+        height: auto;
+	
+    }
+}
+
+/* ********************************** */
+/*       MEDIA QUERIES -- 768px       */
+/* ********************************** */
+
+/* Responsivo: Ajuste a una sola columna en pantallas pequeñas */
+
+@media (max-width: 768px) {
+    .menu-footer {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "contact"
+            "information"
+            "account";
+        gap: 2rem;
+    }
+
+    .footer {
+        grid-template-rows: auto auto auto;
+    }
+}
+
+
+/* ********************************** */
+/*       MEDIA QUERIES -- 1024px      */
+/* ********************************** */
+
+/* Responsivo: Ajuste para pantallas de laptop */
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .menu-footer {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+
+    .card ul {
+        justify-content: space-evenly;
+    }
+
+    .svg {
+        margin: 0 auto;
+    }
+}
+
+/* ********************************** */
+/*       MEDIA QUERIES -- 1180px      */
+/* ********************************** */
+
+@media (max-width: 1180px) {
+	html {
+		font-size: 55%;
+	}
+
+/**BOTÓN DESPLEGABLE**/
+
+.btn1 {
+	width: 17rem;
+	height: 6rem;
+	font-size: 1.3rem;
+}
+
+.btn1 .icon1 {
+	height: 10rem;
+	width: 7.6rem;
+}
+
+.btn1:hover .icon1 {
+	width: 17rem;
+}
+
+.btn1 .text1 {
+	transform: translateX(65px);
+}
+	/*********************/
+
+	.menu-footer {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "contact"
+            "information"
+            "account";
+        gap: 2rem;
+    }
+
+    .footer {
+        grid-template-rows: auto auto auto;
+    }
+
+
+	.logo {
+
+		top: -3rem;
+
+	}
+
+	 .menu-footer {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "contact"
+            "information"
+            "account";
+        gap: 2rem;
+    }
+
+    .footer {
+        grid-template-rows: auto auto auto;
+    }
+
+
+	.img-background {
+		max-width: 100%;
+		overflow-x: hidden; /*No permite que haya un dezplazamiento horizontal*/
+		background-size: 125rem;
+	
+	}
+
+	
+	.button-grid {
+		grid-template-areas:
+			"price button"
+			"add-cart";
+		grid-template-columns: 1fr;/* Una sola columna */
+		align-items: center;/* Centra el contenido verticalmente */
+		justify-content: center;/* Centra el contenido horizontalmente */
+	}
+
+
+	.overlay {
+		width: 94.5%;
+		/* Aumenta el ancho del overlay en pantallas más pequeñas */
+		max-width: 94.5%;
+		font-size: 0.9em;
+		/* Reduce el tamaño de fuente para mejorar la legibilidad en pantallas pequeñas */
+	}
+
+	.box {
+		margin: 0.5rem;
+		/* Reduce el margen en pantallas más pequeñas */
+		max-width: 90%;
+		/* Asegura que la caja no exceda el 90% del ancho en pantallas pequeñas */
+	}
+
+	.carousel {
+		margin-top: 8%;
+	}
+
+
+	.heading-1 {
+		font-size: 2.4rem;
+	}
+
+	.container-options {
+		align-items: center;
+	}
+
+	.container-options span {
+		text-align: center;
+		padding: 1rem 2rem;
+	}
+
+	/*ajustarán automáticamente el número 
+	de colum Unid y 1 fr expan ta min*/
+
+	.container-products {
+		grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+	}
+
+
+}
+
+/* ********************************** */
+/*       MEDIA QUERIES -- 768px       */
+/* ********************************** */
+
+@media (max-width: 768px) {
+	header {
+	  padding: 60px 10px;
+	}
+  
+	header h1 {
+	  font-size: 2.2em;
+	}
+  
+	.comment-box {
+	  padding: 15px;
+	}
+
+	/*MENÚ DESPLEGABLE*/
+	.btn1 {
+		width: 16rem;
+		height: 5.5rem;
+		font-size: 1rem;
+	}
+
+	.btn1 .icon1 {
+		height: 3rem;
+		width: 6rem;
+	}
+
+	.btn1:hover .icon1 {
+		width: 16.7rem;
+	}
+
+	.btn1 .text1 {
+		transform: translateX(40px);
+	}
+  
+	
+  }
+
+  
+
+/* ********************************** */
+/*       MEDIA QUERIES -- 468px       */
+/* ********************************** */
+  
+  @media (max-width: 480px) {
+	header {
+	  padding: 40px 10px;
+	}
+  
+	header h1 {
+	  font-size: 1.8em;
+	}
+  
+	header p {
+	  font-size: 0.9em;
+	}
+  
+	.footer-section {
+	  margin: 5px 0;
+	}
+  
+	.social-icons a {
+	  width: 2rem;
+	  height: 2rem;
+	  font-size: 1rem;
+	}
+  
+	.comment-box {
+	  padding: 10px;
+	}
+  
+	.toggle-menu {
+	  font-size: 2em;
+	}
+  }
+
+
+
+/* ********************************** */
+/*       MEDIA QUERIES -- 468px       */
+/* ********************************** */
+@media (max-width: 468px) {
+	html {
+		font-size: 50.5%;
+	}
+
+	/*MENÚ DESPLEGABLE*/
+	.btn1 {
+		width: 16rem;
+		height: 5.5rem;
+		font-size: 1rem;
+	}
+
+	.btn1 .icon1 {
+		height: 3rem;
+		width: 6rem;
+	}
+
+	.btn1:hover .icon1 {
+		width: 16.7rem;
+	}
+
+	.btn1 .text1 {
+		transform: translateX(40px);
+	}
+/*****************/
+
+	.container-footer {
+        grid-template-columns: 1fr; /* Una columna para pantallas pequeñas */
+        text-align: center;
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
+
+	.overlay {
+		width: 97.5%;
+		/* Aumenta aún más el ancho del overlay en pantallas muy pequeñas */
+		max-width: 97.5%;
+		font-size: 10px;
+		/* Reduce el tamaño de fuente para pantallas muy pequeñas */
+		padding: 0.5rem;
+		/* Reduce el padding para ahorrar espacio en pantallas pequeñas */
+	}
+
+	.box {
+		margin: 0.5rem;
+		/* Reduce el margen en pantallas más pequeñas */
+		max-width: 90%;
+		/* Asegura que la caja no exceda el 90% del ancho en pantallas pequeñas */
+	}
+
+	.card-feature {
+		flex-direction: column;
+		border-radius: 2rem;
+	}
+
+	.feature-content p {
+		font-size: 1.4rem;
+		text-align: center;
+	}
+
+	.feature-content span {
+		font-size: 1.6rem;
+		text-align: center;
+	}
+
+	.container-options span {
+		font-size: 1.8rem;
+		padding: 1rem 1.5rem;
+		font-weight: 500;
+	}
+
+	/*ajustarán automáticamente el número 
+	de colum Unid y 1 fr expan ta min*/
+
+	.container-products {
+		grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+		gap: 1rem;
+	}
+
+	.content-card-product h3 {
+		font-size: 2.2rem;
+	}
+
+	.menu-footer {
+		grid-template-columns: 1fr;
+	}
+
+	.content p {
+		font-size: 1.6rem;
+	}
+}

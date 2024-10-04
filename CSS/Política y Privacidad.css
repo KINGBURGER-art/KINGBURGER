@@ -1,0 +1,164 @@
+ body {
+   margin: 0;
+   padding: 0;
+   font-family: 'Exo 2', sans-serif;
+}
+
+
+.mg-1{
+   padding: 7rem;
+}
+
+.difrent {
+   width: 50%;
+   padding: 40px;
+   border-radius: 0.5rem;
+   background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+   transition: background-color 0.3s ease, transform 0.3s ease;
+   box-shadow: rgb(0,0,0) 5px 10px 50px ,rgb(0,0,0) -5px 0px 250px;
+   z-index: 0;
+   margin: auto;
+   display: flex;
+   flex-direction: column;
+   gap: 40px;
+}
+
+
+.difrent:hover{
+   background-color:rgba(0, 0, 0, 0.4)  ;
+   transform: scale(1.02);
+
+}
+
+
+summary {
+   border-radius: 1.5rem;
+   background: rgba(0, 0, 0, 0.886);
+   box-shadow: 2px 2px 12px rgba(112, 13, 13, 0.814),-2px -2px 12px rgba(112, 13, 13, 0.814) ;
+   padding: 20px;
+   cursor: pointer;
+   font-weight: bold;
+   transition: transform 0.3s ease;
+}
+
+summary:hover{
+   transform: scale(1.04);
+}
+
+
+summary:active {
+   transform: scale(1.01);
+   border-radius: 1.5rem;
+   background: rgba(102, 1, 1, 0.713);
+   box-shadow: 2px 2px 12px rgba(112, 13, 13, 0.872),-2px -2px 12px rgba(112, 13, 13, 0.872) ;
+
+}
+
+
+details {
+   padding: 1.5rem;
+   border-radius: 1.5rem;
+   background: rgba(0, 0, 0, 0.793);
+}
+
+
+@keyframes lightUpText {
+   0% {
+       background-position: 200%;
+   }
+   100% {
+       background-position: -100%;
+   }
+}
+
+
+.J {
+	display: inline;
+   padding: 10px;
+   font-size: 1.2rem;
+   font-weight: bold,600;
+    background: linear-gradient(90deg, rgba(46, 84, 127, 0.680)0%, gold 50%, rgba(46, 84, 127, 0.680) 100%);
+    background-size: 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: lightUpText 6s infinite linear;
+    letter-spacing: 2px;
+}
+
+
+.L{
+	display: inline;
+	font-size: 1.3rem;
+	font-weight: bold;
+    background: linear-gradient(90deg, rgba(46, 84, 127, 0.680)0%, gold 50%, rgba(46, 84, 127, 0.680) 100%);
+    background-size: 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: lightUpText 6s infinite linear;
+	transition: 300ms ;
+
+}
+
+.L:hover{
+	font-size: 1.3rem;
+	font-weight: bold;
+   background: linear-gradient(90deg, rgba(0, 0, 0, 0.895) 0%, rgba(255, 255, 255, 0.682) 50%,  rgba(0, 0, 0, 0.895)100%);
+    background-size: 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: lightUpText 6s infinite linear;
+}
+
+@media (max-width: 1180px){
+   html{
+      font-size: 69.5%;
+   } 
+
+   summary{
+      display: flex;
+      align-items: center;
+      align-content: center;
+      margin: 2rem;
+      padding: 1.9rem;
+   }
+}
+
+
+@media (max-width: 768px){
+   html{
+      font-size: 48.5%;
+   }
+
+   
+.mg-1{
+   padding: 5.5rem;
+}
+   
+
+   summary{
+      display: flex;
+      align-items: center;
+      align-content: center;
+      margin: 1rem;
+      padding: 1.1rem;
+   }
+}
+
+@media (max-width: 468px){
+
+   
+.mg-1{
+   padding: 4.5rem;
+}
+
+   summary{
+      display: flex;
+      align-items: center;
+      align-content: center;
+      margin: 0.5rem;
+      padding: 1rem;
+   }
+}
